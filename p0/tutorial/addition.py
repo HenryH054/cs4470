@@ -38,9 +38,6 @@ def add(a: int, b: int) -> int: ...
 @overload
 def add(a: float, b: float) -> float: ...
 
-@overload
-def add(a: Union[int, float], b: Union[int, float]) -> Union[int, float]: ...
-
 def add(a: Number, b: Number) -> Number:
     """Return the sum of a and b.
     
@@ -58,4 +55,4 @@ def add(a: Number, b: Number) -> Number:
         5.0
     """
     "*** YOUR CODE HERE ***"
-    return 0
+    return a+b

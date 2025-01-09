@@ -73,6 +73,8 @@ def buyLotsOfFruit(order_list: OrderList) -> Optional[float]:
     total_cost: float = 0.0
     
     "*** YOUR CODE HERE ***"
+    for i in range(len(order_list)):
+        total_cost += FRUIT_PRICES[order_list[i][0]] * order_list[i][1]
     
     return total_cost
 
